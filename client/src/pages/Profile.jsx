@@ -30,11 +30,7 @@ export default function Profile() {
   const [userListings, setUserListings] = useState([]);
   const dispatch = useDispatch();
 
-  // firebase storage
-  // allow read;
-  // allow write: if
-  // request.resource.size < 2 * 1024 * 1024 &&
-  // request.resource.contentType.matches('image/.*')
+
 
   useEffect(() => {
     if (file) {
@@ -225,6 +221,11 @@ export default function Profile() {
         >
           Create Listing
         </Link>
+
+        <Link to="/Wallet" className="bg-blue-500 text-white p-3 rounded-lg uppercase text-center hover:opacity-95">
+        My Wallet
+      </Link>
+
       </form>
       <div className='flex justify-between mt-5'>
         <span
@@ -283,6 +284,7 @@ export default function Profile() {
                 <Link to={`/update-listing/${listing._id}`}>
                   <button className='text-green-700 uppercase'>Edit</button>
                 </Link>
+                
               </div>
             </div>
           ))}

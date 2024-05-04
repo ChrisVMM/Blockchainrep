@@ -11,8 +11,8 @@ import UpdateListing from './pages/UpdateListing';
 import Listing from './pages/Listing';
 import Search from './pages/Search';
 import Wallet from './pages/Wallet';
+import Documents from './pages/Documents';
 
-import ContractI from './pages/ContractI';
 
 
 export default function App() {
@@ -25,6 +25,7 @@ export default function App() {
         <Route path='/sign-in' element={<SignIn />} />
         <Route path='/sign-up' element={<SignUp />} />
         <Route path='/about' element={<About />} />
+        <Route path='/documents' element={<Documents />} />
         <Route path='/search' element={<Search />} />
         <Route path='/listing/:listingId' element={<Listing />}
         
@@ -33,7 +34,6 @@ export default function App() {
         <Route element={<PrivateRoute />}>
           <Route path='/profile' element={<Profile />} />
           <Route path='/wallet' element={<Wallet />} />
-          <Route path='/contracti' element={<ContractI />} />
           <Route path='/create-listing' element={<CreateListing />} />
           <Route path='/update-listing/:listingId' element={<UpdateListing />}        />
         </Route>

@@ -12,13 +12,12 @@ const Wallet = () => {
         const walletAddress = accounts[0];
         console.log("Connected with MetaMask, wallet address:", walletAddress);
         
-        // Aquí puedes realizar acciones adicionales con la dirección de la billetera, como obtener información sobre el saldo
-        // Por ejemplo, puedes usar Web3.js o Ethers.js para interactuar con la red Ethereum y obtener información sobre la cuenta
+ 
         
-        // Ejemplo de cómo mostrar la dirección de la billetera en el frontend
+
         setWalletInfo({
           address: walletAddress,
-          // Puedes agregar más campos aquí, como el saldo de la cuenta, etc.
+       
         });
       } else {
         throw new Error('MetaMask not detected');

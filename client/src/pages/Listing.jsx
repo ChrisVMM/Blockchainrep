@@ -145,9 +145,8 @@ export default function Listing() {
                 </button>
               )}
               {contact && <Contact listing={listing} />}
-              <Link href="https://thirdweb.com/polygon-amoy-testnet/0xc3F28D64f06ef9Fbf48BF61a52e48B7dCf5882A9" className="flex items-center bg-blue-500 text-white rounded-lg uppercase hover:opacity-95 p-3 w-full mt-4">
+              <Link to="/contracti" className="flex items-center bg-blue-500 text-white rounded-lg uppercase hover:opacity-95 p-3 w-full mt-4">
                 Create a contract Now ! 
-</a>
               </Link>
             </div>
           </div>

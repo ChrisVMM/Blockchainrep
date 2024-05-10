@@ -12,6 +12,7 @@ import Listing from './pages/Listing';
 import Search from './pages/Search';
 import Wallet from './pages/Wallet';
 import Documents from './pages/Documents';
+import ContractPage from './pages/ContractPage';
 
 
 
@@ -26,6 +27,7 @@ export default function App() {
         <Route path='/sign-up' element={<SignUp />} />
         <Route path='/about' element={<About />} />
         <Route path='/documents' element={<Documents />} />
+        <Route path='/contractpage' element={<ContractPage />} />
         <Route path='/search' element={<Search />} />
         <Route path='/listing/:listingId' element={<Listing />}
         
